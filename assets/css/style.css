@@ -201,6 +201,15 @@ h4 {
   box-shadow: inset 0px 0px 40px 4px rgba(0,0,0,0.5);
 }
 
+/* === CONTACT === */
+#contact .pipe {
+    border-left: 2px solid #f48024;
+}
+
+#contact b {
+  font-size: 38px;
+}
+
 /* === [FOOTER] === */
 footer {
   background: #515769;
@@ -216,21 +225,25 @@ footer p {
   color: #f48024;
 }
 
-
 @media (max-width: 992px) {
-  #web>a {
-    font-size: 95%;
+  .text-right {
+    clear: both;
+    margin-bottom: 50px;
+
   }
 }
 @media (max-width: 768px) {
+  .text-right {
+    clear: both;
+    margin-bottom: 50px;
 
+  }
 }
 @media (max-width: 480px) {
-  #web>a {
-    font-size: 85%;
-  }
-  #web {
-    clear:both;
-  }
 
+  .text-right {
+    clear: both;
+    margin-bottom: 50px;
+
+  }
 }
