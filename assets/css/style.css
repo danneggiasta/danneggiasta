@@ -216,7 +216,7 @@ footer {
   opacity: .95;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
   height: 45px;
-  border-bottom: 2px solid #f48024;
+  border-bottom: 4px solid #515769;
 }
 
 footer p {
