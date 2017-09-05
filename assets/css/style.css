@@ -1,0 +1,236 @@
+/* === GENERAL === */
+html, html a, body {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /*font-family: 'Michroma', sans-serif;*/
+/*font-family: 'Satisfy', cursive;*/
+  background: #f7f7f7;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Michroma', sans-serif;*/
+  color: #a6a7aa;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+em,
+li,
+li a {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Michroma', sans-serif;
+  color: #515769;
+}
+
+a {
+  color: #515769;
+}
+
+a:focus, a:hover, a:active {
+  color: #f48024;
+  text-decoration: none;
+}
+
+
+b {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Satisfy', cursive;
+  color: #f48024;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: 'Michroma', sans-serif;
+  color: #515769;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+.content-lg {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.content-md {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.content-sm {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* === NAVBAR === */
+.navbar {
+  padding-right: 50px;
+  border-top: 2px solid #f48024;
+  box-shadow: 0 0 4px #111;
+
+  background: white; /* For browsers that do not support gradients */        
+  background: -webkit-linear-gradient(-125deg,white , white, transparent); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-125deg,white , white, transparent); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-125deg,white , white, transparent); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-125deg,white , white, transparent); /* Standard syntax (must be last) */
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #f48024;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* === PROMO BLOCK === */
+#header {
+  background: url('../img/header-section-bg.jpg') 50% 0 no-repeat fixed;
+  min-height: 500px;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  box-shadow: inset 0px 0px 40px 4px rgba(0,0,0,0.5);
+}
+.promo-block {
+  padding: 220px 0 130px;
+}
+
+.promo-block .promo-block-title {
+  font-family: 'Michroma', cursive; 
+  font-size: 100px;
+  color: #111;
+  line-height: 1;
+}
+
+.promo-block .promo-block-text {
+  font-size: 25px;
+  color: #111;
+  font-weight: 700;
+  font-family: 'Michroma', cursive;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+
+.list-inline-item:nth-of-type(-n+2) {
+    border-right: 2px solid black;
+}
+
+.fa {
+  color: black;
+}
+
+.fa-spin-hover:hover {
+  -webkit-animation: fa-spin 2s infinite linear;
+  -moz-animation: fa-spin 2s infinite linear;
+  -o-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+@media (max-width: 480px) {
+  .promo-block .promo-block-title {
+    font-size: 50px;
+  }
+}
+
+/* === ABOUT === */
+#about p {
+  font-size: 26px;
+  font-family: 'Michroma', cursive;
+}
+
+
+.text-right {
+  padding:0 20px 20px 0;
+  box-shadow: 10px 10px 10px 1px #515769;
+}
+/* === [PROGRESS BAR] === */
+
+.progress-box .progress {
+  box-shadow: none;
+  height: 2px;
+  margin-bottom: 10px;
+  background: #515769;
+}
+
+.progress-box .progress-bar {
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+          transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.bg-color-base {
+  background: #f48024;
+}
+
+/* === PARALAX PIC === */
+
+#paralax-pic {
+  background: url('../img/paralax-pic.jpg') 100% no-repeat fixed;
+  min-height: 500px;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  box-shadow: inset 0px 0px 40px 4px rgba(0,0,0,0.5);
+}
+
+/* === [FOOTER] === */
+footer {
+  background: #515769;
+  opacity: .95;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  height: 45px;
+
+}
+
+footer p {
+  padding-top: 15px;
+  margin: 0;
+  color: #f48024;
+}
+
+
+@media (max-width: 992px) {
+  #web>a {
+    font-size: 95%;
+  }
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+  #web>a {
+    font-size: 85%;
+  }
+  #web {
+    clear:both;
+  }
+
+}
