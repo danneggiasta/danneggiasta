@@ -212,11 +212,11 @@ h4 {
 
 /* === [FOOTER] === */
 footer {
-  background: #515769;
+  background: white;
   opacity: .95;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
   height: 45px;
-
+  border-bottom: 2px solid #f48024;
 }
 
 footer p {
