@@ -1,3 +1,22 @@
+$(function() {
+        $('.TypeWirter_effect').typed({
+            strings: [' -- worthy, hardworking, ambitious, team worker, ready to make progress, excellent with the introduction of new technologies and new applications, quick understanding and so on.'],
+            typeSpeed: 2,
+            backDelay: 3000,
+            // callback: function(){
+            //     showLang(); // run another element
+            //     $('.typed-cursor').first().hide(); // hide first cursor
+            // }
+        });
+});
+// function showLang() {
+//         $('.lang').typed({
+//             strings: ['C++', 'Java', 'Python'],
+//             typeSpeed: 50,
+//             backDelay: 2000,
+//             loop: true
+//         });
+// }
 
 // Select all links with hashes
 $('a[href*="#"]')
