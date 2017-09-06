@@ -16,6 +16,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Ubuntu', sans-serif;
   background: #1e1e1e;
+  overflow-x: hidden;
 }
 
 p {
@@ -25,11 +26,6 @@ p {
   color: #f7f7f7;
   line-height: 1.4;
   margin-bottom: 15px;
-}
-
-orange {
-  color: #f48024;
-  font-weight: 800;
 }
 
 em,
@@ -55,6 +51,17 @@ span {
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
 }
+
+.orange {
+  color: #f48024;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.sm-text {
+  font-size: 16px;
+}
+
 
 
 b {
@@ -88,6 +95,7 @@ h4 {
   font-size: 22px;
 }
 
+
 .content-lg {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -107,7 +115,6 @@ h4 {
 .navbar {
   padding-right: 50px;
   border-top: 4px solid #f48024;
-  box-shadow: 0 0 4px #1e1e1e;
 
   background: #1e1e1e; /* For browsers that do not support gradients */        
   background: -webkit-linear-gradient(-125deg,#1e1e1e , #1e1e1e, transparent, transparent, transparent); /* For Safari 5.1 to 6.0 */
@@ -139,6 +146,8 @@ h4 {
 }
 
 .navbar-toggler .navbar-toggler-icon {
+  outline: none;
+  cursor: pointer;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(244,128,36, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
@@ -175,15 +184,16 @@ h4 {
     border-right: 2px solid #1e1e1e;
 }
 
-.fa {
+i {
   color: #1e1e1e;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all  .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
-.fa-spin-hover:hover {
-  -webkit-animation: fa-spin 2s infinite linear;
-  -moz-animation: fa-spin 2s infinite linear;
-  -o-animation: fa-spin 2s infinite linear;
-  animation: fa-spin 2s infinite linear;
+i:hover {
+  color: #f48024;
 }
 
 @media (max-width: 480px) {
@@ -202,7 +212,6 @@ h4 {
 
 .text-right {
   padding:0 20px 20px 0;
-  box-shadow: 15px 15px 20px 1px #f48024;
 }
 /* === [PROGRESS BAR] === */
 
@@ -224,6 +233,18 @@ h4 {
 
 .bg-color-base {
   background: #f48024;
+}
+
+.logos {
+  opacity: 0.6;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all  .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.logos:hover {
+  opacity: 1;
 }
 
 /* === PARALAX PIC === */
@@ -255,7 +276,7 @@ h4 {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #1e1e1e; /* Set a background color */
+    background-color: transparent; /* Set a background color */
     color: #f48024; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
@@ -263,9 +284,14 @@ h4 {
 }
 
 #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    font-size: 350%; /* Add a dark-grey background on hover */
 }
 
+#map {
+  opacity: .9;
+  height: 250px;
+  width: 100%;
+}
 
 
 /* === [FOOTER] === */
