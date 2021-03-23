@@ -1,22 +1,19 @@
-$(function() {
-        $('.TypeWirter_effect').typed({
-            strings: [' -- worthy, hardworking, ambitious, team worker, ready to make progress, excellent with the introduction of new technologies and new applications, quick understanding and so on.'],
-            typeSpeed: 2,
-            backDelay: 3000,
-            // callback: function(){
-            //     showLang(); // run another element
-            //     $('.typed-cursor').first().hide(); // hide first cursor
-            // }
-        });
+$(document).ready(function() {
+	
+	setTimeout(function(){
+		$('body').addClass('loaded');
+	}, 3000);
+	
 });
-// function showLang() {
-//         $('.lang').typed({
-//             strings: ['C++', 'Java', 'Python'],
-//             typeSpeed: 50,
-//             backDelay: 2000,
-//             loop: true
-//         });
-// }
+
+$(document).on('click', '#download-cv', function (e) {
+    e.preventDefault();
+    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
+})
+
+$('.carousel').carousel({
+  interval: 5000
+});
 
 // Select all links with hashes
 $('a[href*="#"]')
@@ -49,7 +46,7 @@ $('a[href*="#"]')
           } else {
             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
-          };
+          }
         });
       }
     }
@@ -59,49 +56,23 @@ $('a[href*="#"]')
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 940 || document.documentElement.scrollTop > 940) {
         document.getElementById("myBtn").style.display = "block";
     } else {
         document.getElementById("myBtn").style.display = "none";
     }
 }
 
-$(function() {
-	// Cache the window object
-	var $window = $(window);
+jQuery(function($) {
 
-	// Parallax background effet
-	$('section[data-type="background"]').each(function() {
+    var $nav = $('#menu');
+    var $win = $(window);
+    var winH = $win.height();   // Get the window height.
 
-		var $bgobj = $(this); // assigning the object
-
-		$window.scroll(function() {
-
-			// scroll the background at var speed
-			// the yPos is a negative value bacause
-			// we're scroling it UP!
-			var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-
-			// Put together our final background position
-			var coords = '50% ' + yPos + 'px';
-
-			// Move the background
-			$bgobj.css({ backgroundPosition: coords });
-
-		}); // end window scroll
-
-	});
+    $win.on("scroll", function () {
+	$nav.toggleClass("stuck", $(this).scrollTop() > winH );
+    }).on("resize", function(){ // If the user resizes the window
+       winH = $(this).height(); // you'll need the new height value
+    });
 
 });
-
-function initMap() {
-  var uluru = {lat: 45.258, lng: 19.835};
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
-    center: uluru
-  });
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  });
-}
